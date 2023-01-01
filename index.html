@@ -70,6 +70,56 @@
         </ul>
     </section>
     
+    <style>
+
+  /* Style the globe */
+
+  #globe {
+
+    position: fixed;
+
+    bottom: 20px;
+
+    right: 20px;
+
+    width: 80px;
+
+    height: 80px;
+
+    background-color: #333;
+
+    border-radius: 50%;
+
+  }
+
+  #globe:hover {
+
+    cursor: pointer;
+
+    transform: rotate(360deg);
+
+  }
+
+</style>
+
+<div id="globe"></div>
+
+<script>
+
+  // Add a click event listener to the globe
+
+  var globe = document.getElementById("globe");
+
+  globe.addEventListener("click", function() {
+
+    // Open a new window with the desired URL
+
+    window.open("https://www.example.com", "_blank");
+
+  });
+
+</script>
+    
     <section id="contact">
       <h2>Contact</h2>
       <p>You can reach me at:</p>
